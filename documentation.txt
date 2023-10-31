@@ -1,0 +1,18 @@
+Todo list project documentation--
+
+input section--
+1->task name
+2->task desc
+3->task category->personal
+                ->official
+3->add date and time when added
+
+
+2sections->
+1->personal
+2->official
+
+CRUd-->
+1->if task done text inside text will be cuted
+2->edit task
+3->delete task

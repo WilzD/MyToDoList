@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-header">
+            <h5>Let's Do Something Today</h5>
+        </div>
+        <div class="card card-body">
+            <label>Task To Do </label>
+            <input type="text" id="Task" placeholder="e.g; Buying milk" class="form-control mb-1">
+
+            <label >Details</label>
+            <input type="text" id="Details" placeholder="For making evening coffee :)" class="form-control mb-1">
+
+            <label>Category</label>
+            <select id="Category" class="form-control mb-1">Select Category
+                <option value="Personal">Personal</option>
+                <option value="Official">Oficial</option>
+            </select>
+            <button type="submit" class="btn btn-success" id="Add">Add Task</button>
+            <button type="submit" class="btn btn-primary" id="Update_personal" style="display: none;">Update Task</button>
+            <button type="submit" class="btn btn-primary" id="Update_Official" style="display: none;">Update Task</button>
+        </div>
+
+        <div class="float-container mt-3">
+            <div class="float-child "id="official_list">
+                <div class="card-header">
+                    <h5>Official Work</h5>
+                 </div>
+                 <div class="card card-body">
+                    <table id="Official_table">
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Add On</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>bath</td>
+                                <td>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.</td>
+                                <td><button class="btn btn-success">done</button>
+                                    <button class="btn btn-warning">edit</button>
+                                    <button class="btn btn-danger">delete</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                 </div>
+            </div>
+    
+    
+            <div class="float-child"  id="personal_list">
+                <div class="card-header">
+                    <h5>Personal Work</h5>
+                 </div>
+                 <div class="card card-body">
+                    <table id="personal_table">
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Add On</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>bath</td>
+                                <td>12-3-23</td>
+                                <td><button class="btn btn-success">done</button>
+                                    <button class="btn btn-warning">edit</button>
+                                    <button class="btn btn-danger">delete</button>
+                                </td>
+                            </tr> -->
+
+                        </tbody>
+                    </table>
+                 </div>
+            </div>
+    
+        </div>
+
+    
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
