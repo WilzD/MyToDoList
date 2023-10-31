@@ -13,6 +13,6 @@ input section--
 2->official
 
 CRUd-->
-1->if task done text inside text will be cuted
+1->if task done text inside text will be green
 2->edit task
 3->delete task
